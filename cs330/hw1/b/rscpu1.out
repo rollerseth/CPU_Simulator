@@ -1,0 +1,62 @@
+Username:  rollers
+Date:      Thu Feb 21 00:10:26 EST 2019
+ 
+*** compiling ***
+--- running ---
+ 
+
+rscpu1 written by Seth Roller
+This program will have the HALT and NOOP instructions implemented.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test1.1 opened properly, off to the races
+End of file reached
+fetch1: AR = 0 PC = 0
+fetch2: DR = 0 PC = 1
+fetch3: IR = 0  AR = 1
+no op instruction
+Instruction execution complete: AC = 0 R = 0 ZCVN = 0000 AR = 1 PC = 1 DR = 0
+fetch1: AR = 1 PC = 1
+fetch2: DR = 255  PC = 2
+fetch3: IR = 255  AR = 2
+halt instruction
+Instruction execution complete: AC = 0 R = 0 ZCVN = 0000 AR = 2 PC = 2 DR = 255
+--- Running again ---
+ 
+
+rscpu1 written by Seth Roller
+This program will have the HALT and NOOP instructions implemented.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test1.2 opened properly, off to the races
+End of file reached
+fetch1: AR = 0 PC = 0
+fetch2: DR = 0 PC = 1
+fetch3: IR = 0  AR = 1
+no op instruction
+Instruction execution complete: AC = 0 R = 0 ZCVN = 0000 AR = 1 PC = 1 DR = 0
+fetch1: AR = 1 PC = 1
+fetch2: DR = 0 PC = 2
+fetch3: IR = 0  AR = 2
+no op instruction
+Instruction execution complete: AC = 0 R = 0 ZCVN = 0000 AR = 2 PC = 2 DR = 0
+fetch1: AR = 2 PC = 2
+fetch2: DR = 0 PC = 3
+fetch3: IR = 0  AR = 3
+no op instruction
+Instruction execution complete: AC = 0 R = 0 ZCVN = 0000 AR = 3 PC = 3 DR = 0
+fetch1: AR = 3 PC = 3
+fetch2: DR = 0 PC = 4
+fetch3: IR = 0  AR = 4
+no op instruction
+Instruction execution complete: AC = 0 R = 0 ZCVN = 0000 AR = 4 PC = 4 DR = 0
+fetch1: AR = 4 PC = 4
+fetch2: DR = 0 PC = 5
+fetch3: IR = 0  AR = 5
+no op instruction
+Instruction execution complete: AC = 0 R = 0 ZCVN = 0000 AR = 5 PC = 5 DR = 0
+fetch1: AR = 5 PC = 5
+fetch2: DR = 255  PC = 6
+fetch3: IR = 255  AR = 6
+halt instruction
+Instruction execution complete: AC = 0 R = 0 ZCVN = 0000 AR = 6 PC = 6 DR = 255

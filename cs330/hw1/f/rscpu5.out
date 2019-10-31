@@ -1,0 +1,404 @@
+Username:  rollers
+Date:      Thu Mar 28 09:14:34 EDT 2019
+ 
+*** compiling ***
+--- running ---
+ 
+
+rscpu4 written by Seth Roller
+This program will have the ADD and SUB instructions.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test4.1 opened
+end of file reached
+fetch1: AR = 0 PC = 0
+fetch2: DR = 11 PC = 1
+fetch3: IR = 11  AR = 1
+CLAC instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=1 PC=1 DR=11
+fetch1: AR = 1 PC = 1
+fetch2: DR = 3 PC = 2
+fetch3: IR = 3  AR = 2
+MVAC instruction
+MVAC R = 0
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=2 PC=2 DR=3
+fetch1: AR = 2 PC = 2
+fetch2: DR = 12 PC = 3
+fetch3: IR = 12  AR = 3
+AND instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=3 PC=3 DR=12
+fetch1: AR = 3 PC = 3
+fetch2: DR = 22 PC = 4
+fetch3: IR = 22  AR = 4
+MVI instruction
+MVI1: DR = 255 PC = 5 AR = 5
+MVI2: AC = 255
+Instruction execution complete: AC=255 R=0 ZCVN=1000 AR=5 PC=5 DR=255
+fetch1: AR = 5 PC = 5
+fetch2: DR = 13 PC = 6
+fetch3: IR = 13  AR = 6
+OR instruction
+AC = 255 ZCVN = 0001
+Instruction execution complete: AC=255 R=0 ZCVN=0001 AR=6 PC=6 DR=13
+fetch1: AR = 6 PC = 6
+fetch2: DR = 3 PC = 7
+fetch3: IR = 3  AR = 7
+MVAC instruction
+MVAC R = 255
+Instruction execution complete: AC=255 R=255 ZCVN=0001 AR=7 PC=7 DR=3
+fetch1: AR = 7 PC = 7
+fetch2: DR = 13 PC = 8
+fetch3: IR = 13  AR = 8
+OR instruction
+AC = 255 ZCVN = 0001
+Instruction execution complete: AC=255 R=255 ZCVN=0001 AR=8 PC=8 DR=13
+fetch1: AR = 8 PC = 8
+fetch2: DR = 12 PC = 9
+fetch3: IR = 12  AR = 9
+AND instruction
+AC = 255 ZCVN = 0001
+Instruction execution complete: AC=255 R=255 ZCVN=0001 AR=9 PC=9 DR=12
+fetch1: AR = 9 PC = 9
+fetch2: DR = 14 PC = 10
+fetch3: IR = 14  AR = 10
+XOR instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=255 ZCVN=1000 AR=10 PC=10 DR=14
+fetch1: AR = 10 PC = 10
+fetch2: DR = 15 PC = 11
+fetch3: IR = 15  AR = 11
+NOT instruction
+AC = 255 ZCVN = 0001
+Instruction execution complete: AC=255 R=255 ZCVN=0001 AR=11 PC=11 DR=15
+fetch1: AR = 11 PC = 11
+fetch2: DR = 22 PC = 12
+fetch3: IR = 22  AR = 12
+MVI instruction
+MVI1: DR = 128 PC = 13 AR = 13
+MVI2: AC = 128
+Instruction execution complete: AC=128 R=255 ZCVN=0001 AR=13 PC=13 DR=128
+fetch1: AR = 13 PC = 13
+fetch2: DR = 15 PC = 14
+fetch3: IR = 15  AR = 14
+NOT instruction
+AC = 127 ZCVN = 0000
+Instruction execution complete: AC=127 R=255 ZCVN=0000 AR=14 PC=14 DR=15
+fetch1: AR = 14 PC = 14
+fetch2: DR = 22 PC = 15
+fetch3: IR = 22  AR = 15
+MVI instruction
+MVI1: DR = 128 PC = 16 AR = 16
+MVI2: AC = 128
+Instruction execution complete: AC=128 R=255 ZCVN=0000 AR=16 PC=16 DR=128
+fetch1: AR = 16 PC = 16
+fetch2: DR = 3 PC = 17
+fetch3: IR = 3  AR = 17
+MVAC instruction
+MVAC R = 128
+Instruction execution complete: AC=128 R=128 ZCVN=0000 AR=17 PC=17 DR=3
+fetch1: AR = 17 PC = 17
+fetch2: DR = 22 PC = 18
+fetch3: IR = 22  AR = 18
+MVI instruction
+MVI1: DR = 127 PC = 19 AR = 19
+MVI2: AC = 127
+Instruction execution complete: AC=127 R=128 ZCVN=0000 AR=19 PC=19 DR=127
+fetch1: AR = 19 PC = 19
+fetch2: DR = 14 PC = 20
+fetch3: IR = 14  AR = 20
+XOR instruction
+AC = 255 ZCVN = 0001
+Instruction execution complete: AC=255 R=128 ZCVN=0001 AR=20 PC=20 DR=14
+fetch1: AR = 20 PC = 20
+fetch2: DR = 22 PC = 21
+fetch3: IR = 22  AR = 21
+MVI instruction
+MVI1: DR = 127 PC = 22 AR = 22
+MVI2: AC = 127
+Instruction execution complete: AC=127 R=128 ZCVN=0001 AR=22 PC=22 DR=127
+fetch1: AR = 22 PC = 22
+fetch2: DR = 3 PC = 23
+fetch3: IR = 3  AR = 23
+MVAC instruction
+MVAC R = 127
+Instruction execution complete: AC=127 R=127 ZCVN=0001 AR=23 PC=23 DR=3
+fetch1: AR = 23 PC = 23
+fetch2: DR = 12 PC = 24
+fetch3: IR = 12  AR = 24
+AND instruction
+AC = 127 ZCVN = 0000
+Instruction execution complete: AC=127 R=127 ZCVN=0000 AR=24 PC=24 DR=12
+fetch1: AR = 24 PC = 24
+fetch2: DR = 255 PC = 25
+fetch3: IR = 255  AR = 25
+HALT instruction
+Instruction execution complete: AC=127 R=127 ZCVN=0000 AR=25 PC=25 DR=255
+--- Running again ---
+ 
+
+rscpu4 written by Seth Roller
+This program will have the ADD and SUB instructions.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test5.1 opened
+end of file reached
+fetch1: AR = 0 PC = 0
+fetch2: DR = 22 PC = 1
+fetch3: IR = 22  AR = 1
+MVI instruction
+MVI1: DR = 1 PC = 2 AR = 2
+MVI2: AC = 1
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=2 PC=2 DR=1
+fetch1: AR = 2 PC = 2
+fetch2: DR = 3 PC = 3
+fetch3: IR = 3  AR = 3
+MVAC instruction
+MVAC R = 1
+Instruction execution complete: AC=1 R=1 ZCVN=0000 AR=3 PC=3 DR=3
+fetch1: AR = 3 PC = 3
+fetch2: DR = 8 PC = 4
+fetch3: IR = 8  AR = 4
+ADD Instruction
+AC = 2 ZCVN = 0000
+Instruction execution complete: AC=2 R=1 ZCVN=0000 AR=4 PC=4 DR=8
+fetch1: AR = 4 PC = 4
+fetch2: DR = 22 PC = 5
+fetch3: IR = 22  AR = 5
+MVI instruction
+MVI1: DR = 255 PC = 6 AR = 6
+MVI2: AC = 255
+Instruction execution complete: AC=255 R=1 ZCVN=0000 AR=6 PC=6 DR=255
+fetch1: AR = 6 PC = 6
+fetch2: DR = 8 PC = 7
+fetch3: IR = 8  AR = 7
+ADD Instruction
+AC = 0 ZCVN = 1100
+Instruction execution complete: AC=0 R=1 ZCVN=1100 AR=7 PC=7 DR=8
+fetch1: AR = 7 PC = 7
+fetch2: DR = 22 PC = 8
+fetch3: IR = 22  AR = 8
+MVI instruction
+MVI1: DR = 127 PC = 9 AR = 9
+MVI2: AC = 127
+Instruction execution complete: AC=127 R=1 ZCVN=1100 AR=9 PC=9 DR=127
+fetch1: AR = 9 PC = 9
+fetch2: DR = 8 PC = 10
+fetch3: IR = 8  AR = 10
+ADD Instruction
+AC = 128 ZCVN = 0011
+Instruction execution complete: AC=128 R=1 ZCVN=0011 AR=10 PC=10 DR=8
+fetch1: AR = 10 PC = 10
+fetch2: DR = 22 PC = 11
+fetch3: IR = 22  AR = 11
+MVI instruction
+MVI1: DR = 255 PC = 12 AR = 12
+MVI2: AC = 255
+Instruction execution complete: AC=255 R=1 ZCVN=0011 AR=12 PC=12 DR=255
+fetch1: AR = 12 PC = 12
+fetch2: DR = 3 PC = 13
+fetch3: IR = 3  AR = 13
+MVAC instruction
+MVAC R = 255
+Instruction execution complete: AC=255 R=255 ZCVN=0011 AR=13 PC=13 DR=3
+fetch1: AR = 13 PC = 13
+fetch2: DR = 22 PC = 14
+fetch3: IR = 22  AR = 14
+MVI instruction
+MVI1: DR = 128 PC = 15 AR = 15
+MVI2: AC = 128
+Instruction execution complete: AC=128 R=255 ZCVN=0011 AR=15 PC=15 DR=128
+fetch1: AR = 15 PC = 15
+fetch2: DR = 8 PC = 16
+fetch3: IR = 8  AR = 16
+ADD Instruction
+AC = 127 ZCVN = 0110
+Instruction execution complete: AC=127 R=255 ZCVN=0110 AR=16 PC=16 DR=8
+fetch1: AR = 16 PC = 16
+fetch2: DR = 3 PC = 17
+fetch3: IR = 3  AR = 17
+MVAC instruction
+MVAC R = 127
+Instruction execution complete: AC=127 R=127 ZCVN=0110 AR=17 PC=17 DR=3
+fetch1: AR = 17 PC = 17
+fetch2: DR = 8 PC = 18
+fetch3: IR = 8  AR = 18
+ADD Instruction
+AC = 254 ZCVN = 0011
+Instruction execution complete: AC=254 R=127 ZCVN=0011 AR=18 PC=18 DR=8
+fetch1: AR = 18 PC = 18
+fetch2: DR = 22 PC = 19
+fetch3: IR = 22  AR = 19
+MVI instruction
+MVI1: DR = 254 PC = 20 AR = 20
+MVI2: AC = 254
+Instruction execution complete: AC=254 R=127 ZCVN=0011 AR=20 PC=20 DR=254
+fetch1: AR = 20 PC = 20
+fetch2: DR = 3 PC = 21
+fetch3: IR = 3  AR = 21
+MVAC instruction
+MVAC R = 254
+Instruction execution complete: AC=254 R=254 ZCVN=0011 AR=21 PC=21 DR=3
+fetch1: AR = 21 PC = 21
+fetch2: DR = 8 PC = 22
+fetch3: IR = 8  AR = 22
+ADD Instruction
+AC = 252 ZCVN = 0101
+Instruction execution complete: AC=252 R=254 ZCVN=0101 AR=22 PC=22 DR=8
+fetch1: AR = 22 PC = 22
+fetch2: DR = 11 PC = 23
+fetch3: IR = 11  AR = 23
+CLAC instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=254 ZCVN=1000 AR=23 PC=23 DR=11
+fetch1: AR = 23 PC = 23
+fetch2: DR = 3 PC = 24
+fetch3: IR = 3  AR = 24
+MVAC instruction
+MVAC R = 0
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=24 PC=24 DR=3
+fetch1: AR = 24 PC = 24
+fetch2: DR = 8 PC = 25
+fetch3: IR = 8  AR = 25
+ADD Instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=25 PC=25 DR=8
+fetch1: AR = 25 PC = 25
+fetch2: DR = 255 PC = 26
+fetch3: IR = 255  AR = 26
+HALT instruction
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=26 PC=26 DR=255
+--- Running again ---
+ 
+
+rscpu4 written by Seth Roller
+This program will have the ADD and SUB instructions.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test5.2 opened
+end of file reached
+fetch1: AR = 0 PC = 0
+fetch2: DR = 11 PC = 1
+fetch3: IR = 11  AR = 1
+CLAC instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=1 PC=1 DR=11
+fetch1: AR = 1 PC = 1
+fetch2: DR = 3 PC = 2
+fetch3: IR = 3  AR = 2
+MVAC instruction
+MVAC R = 0
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=2 PC=2 DR=3
+fetch1: AR = 2 PC = 2
+fetch2: DR = 9 PC = 3
+fetch3: IR = 9  AR = 3
+SUB Instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=3 PC=3 DR=9
+fetch1: AR = 3 PC = 3
+fetch2: DR = 10 PC = 4
+fetch3: IR = 10  AR = 4
+INAC instruction
+AC = 1 ZCVN = 0000
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=4 PC=4 DR=10
+fetch1: AR = 4 PC = 4
+fetch2: DR = 9 PC = 5
+fetch3: IR = 9  AR = 5
+SUB Instruction
+AC = 1 ZCVN = 0000
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=5 PC=5 DR=9
+fetch1: AR = 5 PC = 5
+fetch2: DR = 3 PC = 6
+fetch3: IR = 3  AR = 6
+MVAC instruction
+MVAC R = 1
+Instruction execution complete: AC=1 R=1 ZCVN=0000 AR=6 PC=6 DR=3
+fetch1: AR = 6 PC = 6
+fetch2: DR = 22 PC = 7
+fetch3: IR = 22  AR = 7
+MVI instruction
+MVI1: DR = 128 PC = 8 AR = 8
+MVI2: AC = 128
+Instruction execution complete: AC=128 R=1 ZCVN=0000 AR=8 PC=8 DR=128
+fetch1: AR = 8 PC = 8
+fetch2: DR = 9 PC = 9
+fetch3: IR = 9  AR = 9
+SUB Instruction
+AC = 127 ZCVN = 0110
+Instruction execution complete: AC=127 R=1 ZCVN=0110 AR=9 PC=9 DR=9
+fetch1: AR = 9 PC = 9
+fetch2: DR = 22 PC = 10
+fetch3: IR = 22  AR = 10
+MVI instruction
+MVI1: DR = 2 PC = 11 AR = 11
+MVI2: AC = 2
+Instruction execution complete: AC=2 R=1 ZCVN=0110 AR=11 PC=11 DR=2
+fetch1: AR = 11 PC = 11
+fetch2: DR = 9 PC = 12
+fetch3: IR = 9  AR = 12
+SUB Instruction
+AC = 1 ZCVN = 0100
+Instruction execution complete: AC=1 R=1 ZCVN=0100 AR=12 PC=12 DR=9
+fetch1: AR = 12 PC = 12
+fetch2: DR = 22 PC = 13
+fetch3: IR = 22  AR = 13
+MVI instruction
+MVI1: DR = 255 PC = 14 AR = 14
+MVI2: AC = 255
+Instruction execution complete: AC=255 R=1 ZCVN=0100 AR=14 PC=14 DR=255
+fetch1: AR = 14 PC = 14
+fetch2: DR = 9 PC = 15
+fetch3: IR = 9  AR = 15
+SUB Instruction
+AC = 254 ZCVN = 0101
+Instruction execution complete: AC=254 R=1 ZCVN=0101 AR=15 PC=15 DR=9
+fetch1: AR = 15 PC = 15
+fetch2: DR = 22 PC = 16
+fetch3: IR = 22  AR = 16
+MVI instruction
+MVI1: DR = 127 PC = 17 AR = 17
+MVI2: AC = 127
+Instruction execution complete: AC=127 R=1 ZCVN=0101 AR=17 PC=17 DR=127
+fetch1: AR = 17 PC = 17
+fetch2: DR = 9 PC = 18
+fetch3: IR = 9  AR = 18
+SUB Instruction
+AC = 126 ZCVN = 0100
+Instruction execution complete: AC=126 R=1 ZCVN=0100 AR=18 PC=18 DR=9
+fetch1: AR = 18 PC = 18
+fetch2: DR = 4 PC = 19
+fetch3: IR = 4  AR = 19
+MOVR instruction
+MOVR AC = 1
+Instruction execution complete: AC=1 R=1 ZCVN=0100 AR=19 PC=19 DR=4
+fetch1: AR = 19 PC = 19
+fetch2: DR = 10 PC = 20
+fetch3: IR = 10  AR = 20
+INAC instruction
+AC = 2 ZCVN = 0000
+Instruction execution complete: AC=2 R=1 ZCVN=0000 AR=20 PC=20 DR=10
+fetch1: AR = 20 PC = 20
+fetch2: DR = 3 PC = 21
+fetch3: IR = 3  AR = 21
+MVAC instruction
+MVAC R = 2
+Instruction execution complete: AC=2 R=2 ZCVN=0000 AR=21 PC=21 DR=3
+fetch1: AR = 21 PC = 21
+fetch2: DR = 22 PC = 22
+fetch3: IR = 22  AR = 22
+MVI instruction
+MVI1: DR = 3 PC = 23 AR = 23
+MVI2: AC = 3
+Instruction execution complete: AC=3 R=2 ZCVN=0000 AR=23 PC=23 DR=3
+fetch1: AR = 23 PC = 23
+fetch2: DR = 9 PC = 24
+fetch3: IR = 9  AR = 24
+SUB Instruction
+AC = 1 ZCVN = 0100
+Instruction execution complete: AC=1 R=2 ZCVN=0100 AR=24 PC=24 DR=9
+fetch1: AR = 24 PC = 24
+fetch2: DR = 255 PC = 25
+fetch3: IR = 255  AR = 25
+HALT instruction
+Instruction execution complete: AC=1 R=2 ZCVN=0100 AR=25 PC=25 DR=255

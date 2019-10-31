@@ -1,0 +1,2893 @@
+Username:  rollers
+Date:      Wed Apr 24 23:23:05 EDT 2019
+ 
+*** compiling ***
+--- running ---
+ 
+
+rscpuecache written by Seth Roller
+Will be implementing a 1Kcache with four bytes in of data in
+each line.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test.0 opened
+end of file reached
+Cacheread
+	Referencing AR = 0
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=0  Data2=11  Data3=10  Data4=2
+	Tag=0
+fetch1: AR = 0 PC = 0
+fetch2: DR = 0 PC = 1
+fetch3: IR = 0  AR = 1
+NOP instruction
+Instruction execution complete: AC=0 R=0 ZCVN=0000 AR=1 PC=1 DR=0
+Cacheread
+	Referencing AR = 1
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 11 Data3 = 10 Data4 = 2
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=11  Data3=10 Data4=2
+	Tag=0
+fetch1: AR = 1 PC = 1
+fetch2: DR = 11 PC = 2
+fetch3: IR = 11  AR = 2
+CLAC8 instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=2 PC=2 DR=11
+Cacheread
+	Referencing AR = 2
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 11 Data3 = 10 Data4 = 2
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=11  Data3=10 Data4=2
+	Tag=0
+fetch1: AR = 2 PC = 2
+fetch2: DR = 10 PC = 3
+fetch3: IR = 10  AR = 3
+INAC8 instruction
+AC = 1 ZCVN = 0000
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=3 PC=3 DR=10
+Cacheread
+	Referencing AR = 3
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 11 Data3 = 10 Data4 = 2
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=11  Data3=10 Data4=2
+	Tag=0
+fetch1: AR = 3 PC = 3
+fetch2: DR = 2 PC = 4
+fetch3: IR = 2  AR = 4
+Cacheread
+	Referencing AR = 4
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=32  Data2=0  Data3=0  Data4=255
+	Tag=0
+STAC8 instruction
+STAC8-1: DR = 32 PC = 5 AR = 5
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 32 Data2 = 0 Data3 = 0 Data4 = 255
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=32  Data2=0  Data3=0 Data4=255
+	Tag=0
+STAC8-2: TR = 32 DR = 0 AR = 5 PC = 6
+STAC8-3: AR = 8192 M[AR] = 0
+Cachewrite
+	Referencing AR = 8192
+	Main Memory Block = 2048
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1=0  Data2=11  Data3=10  Data4=2
+	Tag=0
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=1  Data2=0  Data3=0  Data4=0
+	Tag=2
+STAC8-4: AC = 1 M[AR] = 1
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=8192 PC=6 DR=0
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 32 Data2 = 0 Data3 = 0 Data4 = 255
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=32  Data2=0  Data3=0 Data4=255
+	Tag=0
+fetch1: AR = 6 PC = 6
+fetch2: DR = 0 PC = 7
+fetch3: IR = 0  AR = 7
+NOP instruction
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=7 PC=7 DR=0
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 32 Data2 = 0 Data3 = 0 Data4 = 255
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=32  Data2=0  Data3=0 Data4=255
+	Tag=0
+fetch1: AR = 7 PC = 7
+fetch2: DR = 255 PC = 8
+fetch3: IR = 255  AR = 8
+HALT instruction
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=8 PC=8 DR=255
+--- Running again ---
+ 
+
+rscpuecache written by Seth Roller
+Will be implementing a 1Kcache with four bytes in of data in
+each line.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test.c1 opened
+end of file reached
+Cacheread
+	Referencing AR = 0
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=0  Data2=139  Data3=138  Data4=130
+	Tag=0
+fetch1: AR = 0 PC = 0
+fetch2: DR = 0 PC = 1
+fetch3: IR = 0  AR = 1
+NOP instruction
+Instruction execution complete: AC=0 R=0 ZCVN=0000 AR=1 PC=1 DR=0
+Cacheread
+	Referencing AR = 1
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 139 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=139  Data3=138 Data4=130
+	Tag=0
+fetch1: AR = 1 PC = 1
+fetch2: DR = 139 PC = 2
+fetch3: IR = 139  AR = 2
+CLAC16 instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=2 PC=2 DR=139
+Cacheread
+	Referencing AR = 2
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 139 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=139  Data3=138 Data4=130
+	Tag=0
+fetch1: AR = 2 PC = 2
+fetch2: DR = 138 PC = 3
+fetch3: IR = 138  AR = 3
+INAC16 instruction
+AC = 1 ZCVN = 0000
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=3 PC=3 DR=138
+Cacheread
+	Referencing AR = 3
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 139 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=139  Data3=138 Data4=130
+	Tag=0
+fetch1: AR = 3 PC = 3
+fetch2: DR = 130 PC = 4
+fetch3: IR = 130  AR = 4
+Cacheread
+	Referencing AR = 4
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=36  Data2=64  Data3=139  Data4=129
+	Tag=0
+STAC16 instruction
+STAC16-1: DR = 36 PC = 5 AR = 5
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 36 Data2 = 64 Data3 = 139 Data4 = 129
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=36  Data2=64  Data3=139 Data4=129
+	Tag=0
+STAC16-2: TR = 36 DR = 64 AR = 5 PC = 6
+STAC16-3: AR = 9280 M[AR] = 0
+Cachewrite
+	Referencing AR = 9280
+	Main Memory Block = 2320
+	Cache Line = 272
+	Before testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=2
+STAC16-4: AR = 9280 M[AR] = 0
+Cachewrite
+	Referencing AR = 9281
+	Main Memory Block = 2320
+	Cache Line = 272
+	Before testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=2
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=1  Data3=0  Data4=0
+	Tag=2
+STAC16-5: AR = 9281 M[AR] = 1
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=9281 PC=6 DR=64
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 36 Data2 = 64 Data3 = 139 Data4 = 129
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=36  Data2=64  Data3=139 Data4=129
+	Tag=0
+fetch1: AR = 6 PC = 6
+fetch2: DR = 139 PC = 7
+fetch3: IR = 139  AR = 7
+CLAC16 instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=0 ZCVN=1000 AR=7 PC=7 DR=139
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 36 Data2 = 64 Data3 = 139 Data4 = 129
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=36  Data2=64  Data3=139 Data4=129
+	Tag=0
+fetch1: AR = 7 PC = 7
+fetch2: DR = 129 PC = 8
+fetch3: IR = 129  AR = 8
+Cacheread
+	Referencing AR = 8
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=36  Data2=64  Data3=0  Data4=255
+	Tag=0
+LDAC16 instruction
+LDAC16-1: DR = 36 PC = 9 AR = 9
+Cacheread
+	Referencing AR = 9
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 36 Data2 = 64 Data3 = 0 Data4 = 255
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=36  Data2=64  Data3=0 Data4=255
+	Tag=0
+LDAC16-2: TR = 36 DR = 64 AR = 9 PC = 10
+LDAC16-3: AR = 9280
+Cacheread
+	Referencing AR = 9280
+	Main Memory Block = 2320
+	Cache Line = 272
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 1 Data3 = 0 Data4 = 0
+	Tag = 2
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=1  Data3=0 Data4=0
+	Tag=2
+LDAC16-4: DR = 0
+LDAC16-5: AC = 0
+Cacheread
+	Referencing AR = 9281
+	Main Memory Block = 2320
+	Cache Line = 272
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 1 Data3 = 0 Data4 = 0
+	Tag = 2
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=1  Data3=0 Data4=0
+	Tag=2
+LDAC16-6: DR = 1 AC = 1 AR = 9281
+Instruction execution complete: AC=1 R=0 ZCVN=1000 AR=9281 PC=10 DR=1
+Cacheread
+	Referencing AR = 10
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 36 Data2 = 64 Data3 = 0 Data4 = 255
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=36  Data2=64  Data3=0 Data4=255
+	Tag=0
+fetch1: AR = 10 PC = 10
+fetch2: DR = 0 PC = 11
+fetch3: IR = 0  AR = 11
+NOP instruction
+Instruction execution complete: AC=1 R=0 ZCVN=1000 AR=11 PC=11 DR=0
+Cacheread
+	Referencing AR = 11
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 36 Data2 = 64 Data3 = 0 Data4 = 255
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=36  Data2=64  Data3=0 Data4=255
+	Tag=0
+fetch1: AR = 11 PC = 11
+fetch2: DR = 255 PC = 12
+fetch3: IR = 255  AR = 12
+HALT instruction
+Instruction execution complete: AC=1 R=0 ZCVN=1000 AR=12 PC=12 DR=255
+--- runnning again---
+ 
+
+rscpuecache written by Seth Roller
+Will be implementing a 1Kcache with four bytes in of data in
+each line.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test.c2 opened
+end of file reached
+Cacheread
+	Referencing AR = 0
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=22  Data2=1  Data3=3  Data4=22
+	Tag=0
+fetch1: AR = 0 PC = 0
+fetch2: DR = 22 PC = 1
+fetch3: IR = 22  AR = 1
+Cacheread
+	Referencing AR = 1
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 22 Data2 = 1 Data3 = 3 Data4 = 22
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=22  Data2=1  Data3=3 Data4=22
+	Tag=0
+MVI8 instruction
+MVI8-1: DR = 1 PC = 2 AR = 2
+MVI8-2: AC = 1
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=2 PC=2 DR=1
+Cacheread
+	Referencing AR = 2
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 22 Data2 = 1 Data3 = 3 Data4 = 22
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=22  Data2=1  Data3=3 Data4=22
+	Tag=0
+fetch1: AR = 2 PC = 2
+fetch2: DR = 3 PC = 3
+fetch3: IR = 3  AR = 3
+MVAC8 instruction
+MVAC8-1 R = 1
+Instruction execution complete: AC=1 R=1 ZCVN=0000 AR=3 PC=3 DR=3
+Cacheread
+	Referencing AR = 3
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 22 Data2 = 1 Data3 = 3 Data4 = 22
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=22  Data2=1  Data3=3 Data4=22
+	Tag=0
+fetch1: AR = 3 PC = 3
+fetch2: DR = 22 PC = 4
+fetch3: IR = 22  AR = 4
+Cacheread
+	Referencing AR = 4
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32  Data4=64
+	Tag=0
+MVI8 instruction
+MVI8-1: DR = 5 PC = 5 AR = 5
+MVI8-2: AC = 5
+Instruction execution complete: AC=5 R=1 ZCVN=0000 AR=5 PC=5 DR=5
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+fetch1: AR = 5 PC = 5
+fetch2: DR = 2 PC = 6
+fetch3: IR = 2  AR = 6
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+STAC8 instruction
+STAC8-1: DR = 32 PC = 7 AR = 7
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+STAC8-2: TR = 32 DR = 64 AR = 7 PC = 8
+STAC8-3: AR = 8256 M[AR] = 0
+Cachewrite
+	Referencing AR = 8256
+	Main Memory Block = 2064
+	Cache Line = 16
+	Before testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=5  Data2=0  Data3=0  Data4=0
+	Tag=2
+STAC8-4: AC = 5 M[AR] = 5
+Instruction execution complete: AC=5 R=1 ZCVN=0000 AR=8256 PC=8 DR=64
+Cacheread
+	Referencing AR = 8
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0  Data4=5
+	Tag=0
+fetch1: AR = 8 PC = 8
+fetch2: DR = 9 PC = 9
+fetch3: IR = 9  AR = 9
+SUB8 Instruction
+AC = 4 ZCVN = 0100
+Instruction execution complete: AC=4 R=1 ZCVN=0100 AR=9 PC=9 DR=9
+Cacheread
+	Referencing AR = 9
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+fetch1: AR = 9 PC = 9
+fetch2: DR = 7 PC = 10
+fetch3: IR = 7  AR = 10
+JPNZ instruction
+Cacheread
+	Referencing AR = 10
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+JUMP1: DR = 0 PC = 11 AR = 11
+Cacheread
+	Referencing AR = 11
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+JUMP2: TR = 0 DR = 5 AR = 11 PC = 12
+JUMP3: PC = 5
+Instruction execution complete: AC=4 R=1 ZCVN=0100 AR=11 PC=5 DR=5
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+fetch1: AR = 5 PC = 5
+fetch2: DR = 2 PC = 6
+fetch3: IR = 2  AR = 6
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+STAC8 instruction
+STAC8-1: DR = 32 PC = 7 AR = 7
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+STAC8-2: TR = 32 DR = 64 AR = 7 PC = 8
+STAC8-3: AR = 8256 M[AR] = 5
+Cachewrite
+	Referencing AR = 8256
+	Main Memory Block = 2064
+	Cache Line = 16
+	Before testing data bytes and tag:
+	Data1=5  Data2=0  Data3=0  Data4=0
+	Tag=2
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=0  Data3=0  Data4=0
+	Tag=2
+STAC8-4: AC = 4 M[AR] = 4
+Instruction execution complete: AC=4 R=1 ZCVN=0100 AR=8256 PC=8 DR=64
+Cacheread
+	Referencing AR = 8
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+fetch1: AR = 8 PC = 8
+fetch2: DR = 9 PC = 9
+fetch3: IR = 9  AR = 9
+SUB8 Instruction
+AC = 3 ZCVN = 0100
+Instruction execution complete: AC=3 R=1 ZCVN=0100 AR=9 PC=9 DR=9
+Cacheread
+	Referencing AR = 9
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+fetch1: AR = 9 PC = 9
+fetch2: DR = 7 PC = 10
+fetch3: IR = 7  AR = 10
+JPNZ instruction
+Cacheread
+	Referencing AR = 10
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+JUMP1: DR = 0 PC = 11 AR = 11
+Cacheread
+	Referencing AR = 11
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+JUMP2: TR = 0 DR = 5 AR = 11 PC = 12
+JUMP3: PC = 5
+Instruction execution complete: AC=3 R=1 ZCVN=0100 AR=11 PC=5 DR=5
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+fetch1: AR = 5 PC = 5
+fetch2: DR = 2 PC = 6
+fetch3: IR = 2  AR = 6
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+STAC8 instruction
+STAC8-1: DR = 32 PC = 7 AR = 7
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+STAC8-2: TR = 32 DR = 64 AR = 7 PC = 8
+STAC8-3: AR = 8256 M[AR] = 4
+Cachewrite
+	Referencing AR = 8256
+	Main Memory Block = 2064
+	Cache Line = 16
+	Before testing data bytes and tag:
+	Data1=4  Data2=0  Data3=0  Data4=0
+	Tag=2
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=3  Data2=0  Data3=0  Data4=0
+	Tag=2
+STAC8-4: AC = 3 M[AR] = 3
+Instruction execution complete: AC=3 R=1 ZCVN=0100 AR=8256 PC=8 DR=64
+Cacheread
+	Referencing AR = 8
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+fetch1: AR = 8 PC = 8
+fetch2: DR = 9 PC = 9
+fetch3: IR = 9  AR = 9
+SUB8 Instruction
+AC = 2 ZCVN = 0100
+Instruction execution complete: AC=2 R=1 ZCVN=0100 AR=9 PC=9 DR=9
+Cacheread
+	Referencing AR = 9
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+fetch1: AR = 9 PC = 9
+fetch2: DR = 7 PC = 10
+fetch3: IR = 7  AR = 10
+JPNZ instruction
+Cacheread
+	Referencing AR = 10
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+JUMP1: DR = 0 PC = 11 AR = 11
+Cacheread
+	Referencing AR = 11
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+JUMP2: TR = 0 DR = 5 AR = 11 PC = 12
+JUMP3: PC = 5
+Instruction execution complete: AC=2 R=1 ZCVN=0100 AR=11 PC=5 DR=5
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+fetch1: AR = 5 PC = 5
+fetch2: DR = 2 PC = 6
+fetch3: IR = 2  AR = 6
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+STAC8 instruction
+STAC8-1: DR = 32 PC = 7 AR = 7
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+STAC8-2: TR = 32 DR = 64 AR = 7 PC = 8
+STAC8-3: AR = 8256 M[AR] = 3
+Cachewrite
+	Referencing AR = 8256
+	Main Memory Block = 2064
+	Cache Line = 16
+	Before testing data bytes and tag:
+	Data1=3  Data2=0  Data3=0  Data4=0
+	Tag=2
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=2  Data2=0  Data3=0  Data4=0
+	Tag=2
+STAC8-4: AC = 2 M[AR] = 2
+Instruction execution complete: AC=2 R=1 ZCVN=0100 AR=8256 PC=8 DR=64
+Cacheread
+	Referencing AR = 8
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+fetch1: AR = 8 PC = 8
+fetch2: DR = 9 PC = 9
+fetch3: IR = 9  AR = 9
+SUB8 Instruction
+AC = 1 ZCVN = 0100
+Instruction execution complete: AC=1 R=1 ZCVN=0100 AR=9 PC=9 DR=9
+Cacheread
+	Referencing AR = 9
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+fetch1: AR = 9 PC = 9
+fetch2: DR = 7 PC = 10
+fetch3: IR = 7  AR = 10
+JPNZ instruction
+Cacheread
+	Referencing AR = 10
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+JUMP1: DR = 0 PC = 11 AR = 11
+Cacheread
+	Referencing AR = 11
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+JUMP2: TR = 0 DR = 5 AR = 11 PC = 12
+JUMP3: PC = 5
+Instruction execution complete: AC=1 R=1 ZCVN=0100 AR=11 PC=5 DR=5
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+fetch1: AR = 5 PC = 5
+fetch2: DR = 2 PC = 6
+fetch3: IR = 2  AR = 6
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+STAC8 instruction
+STAC8-1: DR = 32 PC = 7 AR = 7
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 5 Data2 = 2 Data3 = 32 Data4 = 64
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=5  Data2=2  Data3=32 Data4=64
+	Tag=0
+STAC8-2: TR = 32 DR = 64 AR = 7 PC = 8
+STAC8-3: AR = 8256 M[AR] = 2
+Cachewrite
+	Referencing AR = 8256
+	Main Memory Block = 2064
+	Cache Line = 16
+	Before testing data bytes and tag:
+	Data1=2  Data2=0  Data3=0  Data4=0
+	Tag=2
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=1  Data2=0  Data3=0  Data4=0
+	Tag=2
+STAC8-4: AC = 1 M[AR] = 1
+Instruction execution complete: AC=1 R=1 ZCVN=0100 AR=8256 PC=8 DR=64
+Cacheread
+	Referencing AR = 8
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+fetch1: AR = 8 PC = 8
+fetch2: DR = 9 PC = 9
+fetch3: IR = 9  AR = 9
+SUB8 Instruction
+AC = 0 ZCVN = 1100
+Instruction execution complete: AC=0 R=1 ZCVN=1100 AR=9 PC=9 DR=9
+Cacheread
+	Referencing AR = 9
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 9 Data2 = 7 Data3 = 0 Data4 = 5
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=9  Data2=7  Data3=0 Data4=5
+	Tag=0
+fetch1: AR = 9 PC = 9
+fetch2: DR = 7 PC = 10
+fetch3: IR = 7  AR = 10
+JPNZ instruction
+Instruction execution complete: AC=0 R=1 ZCVN=1100 AR=10 PC=12 DR=7
+Cacheread
+	Referencing AR = 12
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=255  Data2=0  Data3=0  Data4=0
+	Tag=0
+fetch1: AR = 12 PC = 12
+fetch2: DR = 255 PC = 13
+fetch3: IR = 255  AR = 13
+HALT instruction
+Instruction execution complete: AC=0 R=1 ZCVN=1100 AR=13 PC=13 DR=255
+--- running again---
+ 
+
+rscpuecache written by Seth Roller
+Will be implementing a 1Kcache with four bytes in of data in
+each line.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test.c3 opened
+end of file reached
+Cacheread
+	Referencing AR = 0
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=150  Data2=0  Data3=1  Data4=130
+	Tag=0
+fetch1: AR = 0 PC = 0
+fetch2: DR = 150 PC = 1
+fetch3: IR = 150  AR = 1
+Cacheread
+	Referencing AR = 1
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 150 Data2 = 0 Data3 = 1 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=150  Data2=0  Data3=1 Data4=130
+	Tag=0
+MVI16 instruction
+MVI16-1: DR = 0 PC = 2 AR = 2
+Cacheread
+	Referencing AR = 2
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 150 Data2 = 0 Data3 = 1 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=150  Data2=0  Data3=1 Data4=130
+	Tag=0
+MVI16-2: DR = 1 PC = 3 AR = 3
+MVI16-3: AC = 1
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=3 PC=3 DR=1
+Cacheread
+	Referencing AR = 3
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 150 Data2 = 0 Data3 = 1 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=150  Data2=0  Data3=1 Data4=130
+	Tag=0
+fetch1: AR = 3 PC = 3
+fetch2: DR = 130 PC = 4
+fetch3: IR = 130  AR = 4
+Cacheread
+	Referencing AR = 4
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=4  Data2=0  Data3=138  Data4=130
+	Tag=0
+STAC16 instruction
+STAC16-1: DR = 4 PC = 5 AR = 5
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 0 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=0  Data3=138 Data4=130
+	Tag=0
+STAC16-2: TR = 4 DR = 0 AR = 5 PC = 6
+STAC16-3: AR = 1024 M[AR] = 0
+Cachewrite
+	Referencing AR = 1024
+	Main Memory Block = 256
+	Cache Line = 256
+	Before testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=0
+STAC16-4: AR = 1024 M[AR] = 0
+Cachewrite
+	Referencing AR = 1025
+	Main Memory Block = 256
+	Cache Line = 256
+	Before testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=1  Data3=0  Data4=0
+	Tag=0
+STAC16-5: AR = 1025 M[AR] = 1
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=1025 PC=6 DR=0
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 0 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=0  Data3=138 Data4=130
+	Tag=0
+fetch1: AR = 6 PC = 6
+fetch2: DR = 138 PC = 7
+fetch3: IR = 138  AR = 7
+INAC16 instruction
+AC = 2 ZCVN = 0000
+Instruction execution complete: AC=2 R=0 ZCVN=0000 AR=7 PC=7 DR=138
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 0 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=0  Data3=138 Data4=130
+	Tag=0
+fetch1: AR = 7 PC = 7
+fetch2: DR = 130 PC = 8
+fetch3: IR = 130  AR = 8
+Cacheread
+	Referencing AR = 8
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=4  Data2=4  Data3=138  Data4=130
+	Tag=0
+STAC16 instruction
+STAC16-1: DR = 4 PC = 9 AR = 9
+Cacheread
+	Referencing AR = 9
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 4 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=4  Data3=138 Data4=130
+	Tag=0
+STAC16-2: TR = 4 DR = 4 AR = 9 PC = 10
+STAC16-3: AR = 1028 M[AR] = 0
+Cachewrite
+	Referencing AR = 1028
+	Main Memory Block = 257
+	Cache Line = 257
+	Before testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=0
+STAC16-4: AR = 1028 M[AR] = 0
+Cachewrite
+	Referencing AR = 1029
+	Main Memory Block = 257
+	Cache Line = 257
+	Before testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=2  Data3=0  Data4=0
+	Tag=0
+STAC16-5: AR = 1029 M[AR] = 2
+Instruction execution complete: AC=2 R=0 ZCVN=0000 AR=1029 PC=10 DR=4
+Cacheread
+	Referencing AR = 10
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 4 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=4  Data3=138 Data4=130
+	Tag=0
+fetch1: AR = 10 PC = 10
+fetch2: DR = 138 PC = 11
+fetch3: IR = 138  AR = 11
+INAC16 instruction
+AC = 3 ZCVN = 0000
+Instruction execution complete: AC=3 R=0 ZCVN=0000 AR=11 PC=11 DR=138
+Cacheread
+	Referencing AR = 11
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 4 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=4  Data3=138 Data4=130
+	Tag=0
+fetch1: AR = 11 PC = 11
+fetch2: DR = 130 PC = 12
+fetch3: IR = 130  AR = 12
+Cacheread
+	Referencing AR = 12
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=4  Data2=8  Data3=138  Data4=130
+	Tag=0
+STAC16 instruction
+STAC16-1: DR = 4 PC = 13 AR = 13
+Cacheread
+	Referencing AR = 13
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 8 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=8  Data3=138 Data4=130
+	Tag=0
+STAC16-2: TR = 4 DR = 8 AR = 13 PC = 14
+STAC16-3: AR = 1032 M[AR] = 0
+Cachewrite
+	Referencing AR = 1032
+	Main Memory Block = 258
+	Cache Line = 258
+	Before testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=0
+STAC16-4: AR = 1032 M[AR] = 0
+Cachewrite
+	Referencing AR = 1033
+	Main Memory Block = 258
+	Cache Line = 258
+	Before testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=3  Data3=0  Data4=0
+	Tag=0
+STAC16-5: AR = 1033 M[AR] = 3
+Instruction execution complete: AC=3 R=0 ZCVN=0000 AR=1033 PC=14 DR=8
+Cacheread
+	Referencing AR = 14
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 8 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=8  Data3=138 Data4=130
+	Tag=0
+fetch1: AR = 14 PC = 14
+fetch2: DR = 138 PC = 15
+fetch3: IR = 138  AR = 15
+INAC16 instruction
+AC = 4 ZCVN = 0000
+Instruction execution complete: AC=4 R=0 ZCVN=0000 AR=15 PC=15 DR=138
+Cacheread
+	Referencing AR = 15
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 8 Data3 = 138 Data4 = 130
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=8  Data3=138 Data4=130
+	Tag=0
+fetch1: AR = 15 PC = 15
+fetch2: DR = 130 PC = 16
+fetch3: IR = 130  AR = 16
+Cacheread
+	Referencing AR = 16
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=4  Data2=8  Data3=129  Data4=4
+	Tag=0
+STAC16 instruction
+STAC16-1: DR = 4 PC = 17 AR = 17
+Cacheread
+	Referencing AR = 17
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 8 Data3 = 129 Data4 = 4
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=8  Data3=129 Data4=4
+	Tag=0
+STAC16-2: TR = 4 DR = 8 AR = 17 PC = 18
+STAC16-3: AR = 1032 M[AR] = 0
+Cachewrite
+	Referencing AR = 1032
+	Main Memory Block = 258
+	Cache Line = 258
+	Before testing data bytes and tag:
+	Data1=0  Data2=3  Data3=0  Data4=0
+	Tag=0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=3  Data3=0  Data4=0
+	Tag=0
+STAC16-4: AR = 1032 M[AR] = 0
+Cachewrite
+	Referencing AR = 1033
+	Main Memory Block = 258
+	Cache Line = 258
+	Before testing data bytes and tag:
+	Data1=0  Data2=3  Data3=0  Data4=0
+	Tag=0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=4  Data3=0  Data4=0
+	Tag=0
+STAC16-5: AR = 1033 M[AR] = 4
+Instruction execution complete: AC=4 R=0 ZCVN=0000 AR=1033 PC=18 DR=8
+Cacheread
+	Referencing AR = 18
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 8 Data3 = 129 Data4 = 4
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=8  Data3=129 Data4=4
+	Tag=0
+fetch1: AR = 18 PC = 18
+fetch2: DR = 129 PC = 19
+fetch3: IR = 129  AR = 19
+Cacheread
+	Referencing AR = 19
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 4 Data2 = 8 Data3 = 129 Data4 = 4
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=4  Data2=8  Data3=129 Data4=4
+	Tag=0
+LDAC16 instruction
+LDAC16-1: DR = 4 PC = 20 AR = 20
+Cacheread
+	Referencing AR = 20
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=0  Data2=129  Data3=4  Data4=4
+	Tag=0
+LDAC16-2: TR = 4 DR = 0 AR = 20 PC = 21
+LDAC16-3: AR = 1024
+Cacheread
+	Referencing AR = 1024
+	Main Memory Block = 256
+	Cache Line = 256
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 1 Data3 = 0 Data4 = 0
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=1  Data3=0 Data4=0
+	Tag=0
+LDAC16-4: DR = 0
+LDAC16-5: AC = 4
+Cacheread
+	Referencing AR = 1025
+	Main Memory Block = 256
+	Cache Line = 256
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 1 Data3 = 0 Data4 = 0
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=1  Data3=0 Data4=0
+	Tag=0
+LDAC16-6: DR = 1 AC = 1 AR = 1025
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=1025 PC=21 DR=1
+Cacheread
+	Referencing AR = 21
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 129 Data3 = 4 Data4 = 4
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=129  Data3=4 Data4=4
+	Tag=0
+fetch1: AR = 21 PC = 21
+fetch2: DR = 129 PC = 22
+fetch3: IR = 129  AR = 22
+Cacheread
+	Referencing AR = 22
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 129 Data3 = 4 Data4 = 4
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=129  Data3=4 Data4=4
+	Tag=0
+LDAC16 instruction
+LDAC16-1: DR = 4 PC = 23 AR = 23
+Cacheread
+	Referencing AR = 23
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 129 Data3 = 4 Data4 = 4
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=129  Data3=4 Data4=4
+	Tag=0
+LDAC16-2: TR = 4 DR = 4 AR = 23 PC = 24
+LDAC16-3: AR = 1028
+Cacheread
+	Referencing AR = 1028
+	Main Memory Block = 257
+	Cache Line = 257
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 2 Data3 = 0 Data4 = 0
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=2  Data3=0 Data4=0
+	Tag=0
+LDAC16-4: DR = 0
+LDAC16-5: AC = 1
+Cacheread
+	Referencing AR = 1029
+	Main Memory Block = 257
+	Cache Line = 257
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 2 Data3 = 0 Data4 = 0
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=2  Data3=0 Data4=0
+	Tag=0
+LDAC16-6: DR = 2 AC = 2 AR = 1029
+Instruction execution complete: AC=2 R=0 ZCVN=0000 AR=1029 PC=24 DR=2
+Cacheread
+	Referencing AR = 24
+	Main Memory Block = 6
+	Cache Line = 6
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=255  Data2=0  Data3=0  Data4=0
+	Tag=0
+fetch1: AR = 24 PC = 24
+fetch2: DR = 255 PC = 25
+fetch3: IR = 255  AR = 25
+HALT instruction
+Instruction execution complete: AC=2 R=0 ZCVN=0000 AR=25 PC=25 DR=255
+--- running again---
+ 
+
+rscpuecache written by Seth Roller
+Will be implementing a 1Kcache with four bytes in of data in
+each line.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test.6 opened
+end of file reached
+Cacheread
+	Referencing AR = 0
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=0  Data2=22  Data3=1  Data4=10
+	Tag=0
+fetch1: AR = 0 PC = 0
+fetch2: DR = 0 PC = 1
+fetch3: IR = 0  AR = 1
+NOP instruction
+Instruction execution complete: AC=0 R=0 ZCVN=0000 AR=1 PC=1 DR=0
+Cacheread
+	Referencing AR = 1
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 22 Data3 = 1 Data4 = 10
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=22  Data3=1 Data4=10
+	Tag=0
+fetch1: AR = 1 PC = 1
+fetch2: DR = 22 PC = 2
+fetch3: IR = 22  AR = 2
+Cacheread
+	Referencing AR = 2
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 22 Data3 = 1 Data4 = 10
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=22  Data3=1 Data4=10
+	Tag=0
+MVI8 instruction
+MVI8-1: DR = 1 PC = 3 AR = 3
+MVI8-2: AC = 1
+Instruction execution complete: AC=1 R=0 ZCVN=0000 AR=3 PC=3 DR=1
+Cacheread
+	Referencing AR = 3
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 22 Data3 = 1 Data4 = 10
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=22  Data3=1 Data4=10
+	Tag=0
+fetch1: AR = 3 PC = 3
+fetch2: DR = 10 PC = 4
+fetch3: IR = 10  AR = 4
+INAC8 instruction
+AC = 2 ZCVN = 0000
+Instruction execution complete: AC=2 R=0 ZCVN=0000 AR=4 PC=4 DR=10
+Cacheread
+	Referencing AR = 4
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=3  Data2=22  Data3=10  Data4=8
+	Tag=0
+fetch1: AR = 4 PC = 4
+fetch2: DR = 3 PC = 5
+fetch3: IR = 3  AR = 5
+MVAC8 instruction
+MVAC8-1 R = 2
+Instruction execution complete: AC=2 R=2 ZCVN=0000 AR=5 PC=5 DR=3
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 3 Data2 = 22 Data3 = 10 Data4 = 8
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=3  Data2=22  Data3=10 Data4=8
+	Tag=0
+fetch1: AR = 5 PC = 5
+fetch2: DR = 22 PC = 6
+fetch3: IR = 22  AR = 6
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 3 Data2 = 22 Data3 = 10 Data4 = 8
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=3  Data2=22  Data3=10 Data4=8
+	Tag=0
+MVI8 instruction
+MVI8-1: DR = 10 PC = 7 AR = 7
+MVI8-2: AC = 10
+Instruction execution complete: AC=10 R=2 ZCVN=0000 AR=7 PC=7 DR=10
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 3 Data2 = 22 Data3 = 10 Data4 = 8
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=3  Data2=22  Data3=10 Data4=8
+	Tag=0
+fetch1: AR = 7 PC = 7
+fetch2: DR = 8 PC = 8
+fetch3: IR = 8  AR = 8
+ADD8 Instruction
+AC = 12 ZCVN = 0000
+Instruction execution complete: AC=12 R=2 ZCVN=0000 AR=8 PC=8 DR=8
+Cacheread
+	Referencing AR = 8
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=10  Data2=9  Data3=22  Data4=1
+	Tag=0
+fetch1: AR = 8 PC = 8
+fetch2: DR = 10 PC = 9
+fetch3: IR = 10  AR = 9
+INAC8 instruction
+AC = 13 ZCVN = 0000
+Instruction execution complete: AC=13 R=2 ZCVN=0000 AR=9 PC=9 DR=10
+Cacheread
+	Referencing AR = 9
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 10 Data2 = 9 Data3 = 22 Data4 = 1
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=10  Data2=9  Data3=22 Data4=1
+	Tag=0
+fetch1: AR = 9 PC = 9
+fetch2: DR = 9 PC = 10
+fetch3: IR = 9  AR = 10
+SUB8 Instruction
+AC = 11 ZCVN = 0100
+Instruction execution complete: AC=11 R=2 ZCVN=0100 AR=10 PC=10 DR=9
+Cacheread
+	Referencing AR = 10
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 10 Data2 = 9 Data3 = 22 Data4 = 1
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=10  Data2=9  Data3=22 Data4=1
+	Tag=0
+fetch1: AR = 10 PC = 10
+fetch2: DR = 22 PC = 11
+fetch3: IR = 22  AR = 11
+Cacheread
+	Referencing AR = 11
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 10 Data2 = 9 Data3 = 22 Data4 = 1
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=10  Data2=9  Data3=22 Data4=1
+	Tag=0
+MVI8 instruction
+MVI8-1: DR = 1 PC = 12 AR = 12
+MVI8-2: AC = 1
+Instruction execution complete: AC=1 R=2 ZCVN=0100 AR=12 PC=12 DR=1
+Cacheread
+	Referencing AR = 12
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=19  Data2=18  Data3=20  Data4=21
+	Tag=0
+fetch1: AR = 12 PC = 12
+fetch2: DR = 19 PC = 13
+fetch3: IR = 19  AR = 13
+RR8 instruction
+AC = 128 ZCVN = 0101
+Instruction execution complete: AC=128 R=2 ZCVN=0101 AR=13 PC=13 DR=19
+Cacheread
+	Referencing AR = 13
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 19 Data2 = 18 Data3 = 20 Data4 = 21
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=19  Data2=18  Data3=20 Data4=21
+	Tag=0
+fetch1: AR = 13 PC = 13
+fetch2: DR = 18 PC = 14
+fetch3: IR = 18  AR = 14
+RL8 instruction
+AC = 1 ZCVN = 0100
+Instruction execution complete: AC=1 R=2 ZCVN=0100 AR=14 PC=14 DR=18
+Cacheread
+	Referencing AR = 14
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 19 Data2 = 18 Data3 = 20 Data4 = 21
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=19  Data2=18  Data3=20 Data4=21
+	Tag=0
+fetch1: AR = 14 PC = 14
+fetch2: DR = 20 PC = 15
+fetch3: IR = 20  AR = 15
+LSL8 instruction
+AC = 2 ZCVN = 0000
+Instruction execution complete: AC=2 R=2 ZCVN=0000 AR=15 PC=15 DR=20
+Cacheread
+	Referencing AR = 15
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 19 Data2 = 18 Data3 = 20 Data4 = 21
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=19  Data2=18  Data3=20 Data4=21
+	Tag=0
+fetch1: AR = 15 PC = 15
+fetch2: DR = 21 PC = 16
+fetch3: IR = 21  AR = 16
+LSR8 instruction
+AC = 1 ZCVN = 0000
+Instruction execution complete: AC=1 R=2 ZCVN=0000 AR=16 PC=16 DR=21
+Cacheread
+	Referencing AR = 16
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=22  Data2=15  Data3=3  Data4=22
+	Tag=0
+fetch1: AR = 16 PC = 16
+fetch2: DR = 22 PC = 17
+fetch3: IR = 22  AR = 17
+Cacheread
+	Referencing AR = 17
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 22 Data2 = 15 Data3 = 3 Data4 = 22
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=22  Data2=15  Data3=3 Data4=22
+	Tag=0
+MVI8 instruction
+MVI8-1: DR = 15 PC = 18 AR = 18
+MVI8-2: AC = 15
+Instruction execution complete: AC=15 R=2 ZCVN=0000 AR=18 PC=18 DR=15
+Cacheread
+	Referencing AR = 18
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 22 Data2 = 15 Data3 = 3 Data4 = 22
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=22  Data2=15  Data3=3 Data4=22
+	Tag=0
+fetch1: AR = 18 PC = 18
+fetch2: DR = 3 PC = 19
+fetch3: IR = 3  AR = 19
+MVAC8 instruction
+MVAC8-1 R = 15
+Instruction execution complete: AC=15 R=15 ZCVN=0000 AR=19 PC=19 DR=3
+Cacheread
+	Referencing AR = 19
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 22 Data2 = 15 Data3 = 3 Data4 = 22
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=22  Data2=15  Data3=3 Data4=22
+	Tag=0
+fetch1: AR = 19 PC = 19
+fetch2: DR = 22 PC = 20
+fetch3: IR = 22  AR = 20
+Cacheread
+	Referencing AR = 20
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=240  Data2=13  Data3=14  Data4=22
+	Tag=0
+MVI8 instruction
+MVI8-1: DR = 240 PC = 21 AR = 21
+MVI8-2: AC = 240
+Instruction execution complete: AC=240 R=15 ZCVN=0000 AR=21 PC=21 DR=240
+Cacheread
+	Referencing AR = 21
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 240 Data2 = 13 Data3 = 14 Data4 = 22
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=240  Data2=13  Data3=14 Data4=22
+	Tag=0
+fetch1: AR = 21 PC = 21
+fetch2: DR = 13 PC = 22
+fetch3: IR = 13  AR = 22
+OR8 instruction
+AC = 255 ZCVN = 0001
+Instruction execution complete: AC=255 R=15 ZCVN=0001 AR=22 PC=22 DR=13
+Cacheread
+	Referencing AR = 22
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 240 Data2 = 13 Data3 = 14 Data4 = 22
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=240  Data2=13  Data3=14 Data4=22
+	Tag=0
+fetch1: AR = 22 PC = 22
+fetch2: DR = 14 PC = 23
+fetch3: IR = 14  AR = 23
+XOR8 instruction
+AC = 240 ZCVN = 0001
+Instruction execution complete: AC=240 R=15 ZCVN=0001 AR=23 PC=23 DR=14
+Cacheread
+	Referencing AR = 23
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 240 Data2 = 13 Data3 = 14 Data4 = 22
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=240  Data2=13  Data3=14 Data4=22
+	Tag=0
+fetch1: AR = 23 PC = 23
+fetch2: DR = 22 PC = 24
+fetch3: IR = 22  AR = 24
+Cacheread
+	Referencing AR = 24
+	Main Memory Block = 6
+	Cache Line = 6
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=15  Data2=3  Data3=12  Data4=255
+	Tag=0
+MVI8 instruction
+MVI8-1: DR = 15 PC = 25 AR = 25
+MVI8-2: AC = 15
+Instruction execution complete: AC=15 R=15 ZCVN=0001 AR=25 PC=25 DR=15
+Cacheread
+	Referencing AR = 25
+	Main Memory Block = 6
+	Cache Line = 6
+	Before testing data bytes and tag:
+	Data1 = 15 Data2 = 3 Data3 = 12 Data4 = 255
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=15  Data2=3  Data3=12 Data4=255
+	Tag=0
+fetch1: AR = 25 PC = 25
+fetch2: DR = 3 PC = 26
+fetch3: IR = 3  AR = 26
+MVAC8 instruction
+MVAC8-1 R = 15
+Instruction execution complete: AC=15 R=15 ZCVN=0001 AR=26 PC=26 DR=3
+Cacheread
+	Referencing AR = 26
+	Main Memory Block = 6
+	Cache Line = 6
+	Before testing data bytes and tag:
+	Data1 = 15 Data2 = 3 Data3 = 12 Data4 = 255
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=15  Data2=3  Data3=12 Data4=255
+	Tag=0
+fetch1: AR = 26 PC = 26
+fetch2: DR = 12 PC = 27
+fetch3: IR = 12  AR = 27
+AND8 instruction
+AC = 15 ZCVN = 0000
+Instruction execution complete: AC=15 R=15 ZCVN=0000 AR=27 PC=27 DR=12
+Cacheread
+	Referencing AR = 27
+	Main Memory Block = 6
+	Cache Line = 6
+	Before testing data bytes and tag:
+	Data1 = 15 Data2 = 3 Data3 = 12 Data4 = 255
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=15  Data2=3  Data3=12 Data4=255
+	Tag=0
+fetch1: AR = 27 PC = 27
+fetch2: DR = 255 PC = 28
+fetch3: IR = 255  AR = 28
+HALT instruction
+Instruction execution complete: AC=15 R=15 ZCVN=0000 AR=28 PC=28 DR=255
+--- running again---
+ 
+
+rscpuecache written by Seth Roller
+Will be implementing a 1Kcache with four bytes in of data in
+each line.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/test.7 opened
+end of file reached
+Cacheread
+	Referencing AR = 0
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=0  Data2=129  Data3=0  Data4=41
+	Tag=0
+fetch1: AR = 0 PC = 0
+fetch2: DR = 0 PC = 1
+fetch3: IR = 0  AR = 1
+NOP instruction
+Instruction execution complete: AC=0 R=0 ZCVN=0000 AR=1 PC=1 DR=0
+Cacheread
+	Referencing AR = 1
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 129 Data3 = 0 Data4 = 41
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=129  Data3=0 Data4=41
+	Tag=0
+fetch1: AR = 1 PC = 1
+fetch2: DR = 129 PC = 2
+fetch3: IR = 129  AR = 2
+Cacheread
+	Referencing AR = 2
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 129 Data3 = 0 Data4 = 41
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=129  Data3=0 Data4=41
+	Tag=0
+LDAC16 instruction
+LDAC16-1: DR = 0 PC = 3 AR = 3
+Cacheread
+	Referencing AR = 3
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 129 Data3 = 0 Data4 = 41
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=129  Data3=0 Data4=41
+	Tag=0
+LDAC16-2: TR = 0 DR = 41 AR = 3 PC = 4
+LDAC16-3: AR = 41
+Cacheread
+	Referencing AR = 41
+	Main Memory Block = 10
+	Cache Line = 10
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=255  Data2=0  Data3=2  Data4=127
+	Tag=0
+LDAC16-4: DR = 0
+LDAC16-5: AC = 0
+Cacheread
+	Referencing AR = 42
+	Main Memory Block = 10
+	Cache Line = 10
+	Before testing data bytes and tag:
+	Data1 = 255 Data2 = 0 Data3 = 2 Data4 = 127
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=255  Data2=0  Data3=2 Data4=127
+	Tag=0
+LDAC16-6: DR = 2 AC = 2 AR = 42
+Instruction execution complete: AC=2 R=0 ZCVN=0000 AR=42 PC=4 DR=2
+Cacheread
+	Referencing AR = 4
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=131  Data2=136  Data3=137  Data4=138
+	Tag=0
+fetch1: AR = 4 PC = 4
+fetch2: DR = 131 PC = 5
+fetch3: IR = 131  AR = 5
+MVAC16 instruction
+MVAC16-1 R = 2
+Instruction execution complete: AC=2 R=2 ZCVN=0000 AR=5 PC=5 DR=131
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 131 Data2 = 136 Data3 = 137 Data4 = 138
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=131  Data2=136  Data3=137 Data4=138
+	Tag=0
+fetch1: AR = 5 PC = 5
+fetch2: DR = 136 PC = 6
+fetch3: IR = 136  AR = 6
+ADD16 Instruction
+AC = 4 ZCVN = 0000
+Instruction execution complete: AC=4 R=2 ZCVN=0000 AR=6 PC=6 DR=136
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 131 Data2 = 136 Data3 = 137 Data4 = 138
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=131  Data2=136  Data3=137 Data4=138
+	Tag=0
+fetch1: AR = 6 PC = 6
+fetch2: DR = 137 PC = 7
+fetch3: IR = 137  AR = 7
+SUB16 Instruction
+AC = 2 ZCVN = 0100
+Instruction execution complete: AC=2 R=2 ZCVN=0100 AR=7 PC=7 DR=137
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 131 Data2 = 136 Data3 = 137 Data4 = 138
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=131  Data2=136  Data3=137 Data4=138
+	Tag=0
+fetch1: AR = 7 PC = 7
+fetch2: DR = 138 PC = 8
+fetch3: IR = 138  AR = 8
+INAC16 instruction
+AC = 3 ZCVN = 0000
+Instruction execution complete: AC=3 R=2 ZCVN=0000 AR=8 PC=8 DR=138
+Cacheread
+	Referencing AR = 8
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=130  Data2=0  Data3=46  Data4=139
+	Tag=0
+fetch1: AR = 8 PC = 8
+fetch2: DR = 130 PC = 9
+fetch3: IR = 130  AR = 9
+Cacheread
+	Referencing AR = 9
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 130 Data2 = 0 Data3 = 46 Data4 = 139
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=130  Data2=0  Data3=46 Data4=139
+	Tag=0
+STAC16 instruction
+STAC16-1: DR = 0 PC = 10 AR = 10
+Cacheread
+	Referencing AR = 10
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 130 Data2 = 0 Data3 = 46 Data4 = 139
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=130  Data2=0  Data3=46 Data4=139
+	Tag=0
+STAC16-2: TR = 0 DR = 46 AR = 10 PC = 11
+STAC16-3: AR = 46 M[AR] = 0
+Cachewrite
+	Referencing AR = 46
+	Main Memory Block = 11
+	Cache Line = 11
+	Before testing data bytes and tag:
+	Data1=0  Data2=0  Data3=0  Data4=0
+	Tag=255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=255  Data2=128  Data3=0  Data4=0
+	Tag=0
+STAC16-4: AR = 46 M[AR] = 0
+Cachewrite
+	Referencing AR = 47
+	Main Memory Block = 11
+	Cache Line = 11
+	Before testing data bytes and tag:
+	Data1=255  Data2=128  Data3=0  Data4=0
+	Tag=0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=255  Data2=128  Data3=0  Data4=3
+	Tag=0
+STAC16-5: AR = 47 M[AR] = 3
+Instruction execution complete: AC=3 R=2 ZCVN=0000 AR=47 PC=11 DR=46
+Cacheread
+	Referencing AR = 11
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 130 Data2 = 0 Data3 = 46 Data4 = 139
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=130  Data2=0  Data3=46 Data4=139
+	Tag=0
+fetch1: AR = 11 PC = 11
+fetch2: DR = 139 PC = 12
+fetch3: IR = 139  AR = 12
+CLAC16 instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=2 ZCVN=1000 AR=12 PC=12 DR=139
+Cacheread
+	Referencing AR = 12
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=140  Data2=141  Data3=137  Data4=142
+	Tag=0
+fetch1: AR = 12 PC = 12
+fetch2: DR = 140 PC = 13
+fetch3: IR = 140  AR = 13
+AND16 instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=2 ZCVN=1000 AR=13 PC=13 DR=140
+Cacheread
+	Referencing AR = 13
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 140 Data2 = 141 Data3 = 137 Data4 = 142
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=140  Data2=141  Data3=137 Data4=142
+	Tag=0
+fetch1: AR = 13 PC = 13
+fetch2: DR = 141 PC = 14
+fetch3: IR = 141  AR = 14
+OR16 instruction
+AC = 2 ZCVN = 0000
+Instruction execution complete: AC=2 R=2 ZCVN=0000 AR=14 PC=14 DR=141
+Cacheread
+	Referencing AR = 14
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 140 Data2 = 141 Data3 = 137 Data4 = 142
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=140  Data2=141  Data3=137 Data4=142
+	Tag=0
+fetch1: AR = 14 PC = 14
+fetch2: DR = 137 PC = 15
+fetch3: IR = 137  AR = 15
+SUB16 Instruction
+AC = 0 ZCVN = 1100
+Instruction execution complete: AC=0 R=2 ZCVN=1100 AR=15 PC=15 DR=137
+Cacheread
+	Referencing AR = 15
+	Main Memory Block = 3
+	Cache Line = 3
+	Before testing data bytes and tag:
+	Data1 = 140 Data2 = 141 Data3 = 137 Data4 = 142
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=140  Data2=141  Data3=137 Data4=142
+	Tag=0
+fetch1: AR = 15 PC = 15
+fetch2: DR = 142 PC = 16
+fetch3: IR = 142  AR = 16
+XOR16 instruction
+AC = 2 ZCVN = 0100
+Instruction execution complete: AC=2 R=2 ZCVN=0100 AR=16 PC=16 DR=142
+Cacheread
+	Referencing AR = 16
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=138  Data2=143  Data3=139  Data4=138
+	Tag=0
+fetch1: AR = 16 PC = 16
+fetch2: DR = 138 PC = 17
+fetch3: IR = 138  AR = 17
+INAC16 instruction
+AC = 3 ZCVN = 0000
+Instruction execution complete: AC=3 R=2 ZCVN=0000 AR=17 PC=17 DR=138
+Cacheread
+	Referencing AR = 17
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 138 Data2 = 143 Data3 = 139 Data4 = 138
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=138  Data2=143  Data3=139 Data4=138
+	Tag=0
+fetch1: AR = 17 PC = 17
+fetch2: DR = 143 PC = 18
+fetch3: IR = 143  AR = 18
+NOT16 instruction
+AC = 65532 ZCVN = 0001
+Instruction execution complete: AC=65532 R=2 ZCVN=0001 AR=18 PC=18 DR=143
+Cacheread
+	Referencing AR = 18
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 138 Data2 = 143 Data3 = 139 Data4 = 138
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=138  Data2=143  Data3=139 Data4=138
+	Tag=0
+fetch1: AR = 18 PC = 18
+fetch2: DR = 139 PC = 19
+fetch3: IR = 139  AR = 19
+CLAC16 instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=2 ZCVN=1000 AR=19 PC=19 DR=139
+Cacheread
+	Referencing AR = 19
+	Main Memory Block = 4
+	Cache Line = 4
+	Before testing data bytes and tag:
+	Data1 = 138 Data2 = 143 Data3 = 139 Data4 = 138
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=138  Data2=143  Data3=139 Data4=138
+	Tag=0
+fetch1: AR = 19 PC = 19
+fetch2: DR = 138 PC = 20
+fetch3: IR = 138  AR = 20
+INAC16 instruction
+AC = 1 ZCVN = 0000
+Instruction execution complete: AC=1 R=2 ZCVN=0000 AR=20 PC=20 DR=138
+Cacheread
+	Referencing AR = 20
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=148  Data2=149  Data3=147  Data4=146
+	Tag=0
+fetch1: AR = 20 PC = 20
+fetch2: DR = 148 PC = 21
+fetch3: IR = 148  AR = 21
+LSL16 instruction
+AC = 2 ZCVN = 0000
+Instruction execution complete: AC=2 R=2 ZCVN=0000 AR=21 PC=21 DR=148
+Cacheread
+	Referencing AR = 21
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 148 Data2 = 149 Data3 = 147 Data4 = 146
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=148  Data2=149  Data3=147 Data4=146
+	Tag=0
+fetch1: AR = 21 PC = 21
+fetch2: DR = 149 PC = 22
+fetch3: IR = 149  AR = 22
+LSR16 instruction
+AC = 1 ZCVN = 0000
+Instruction execution complete: AC=1 R=2 ZCVN=0000 AR=22 PC=22 DR=149
+Cacheread
+	Referencing AR = 22
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 148 Data2 = 149 Data3 = 147 Data4 = 146
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=148  Data2=149  Data3=147 Data4=146
+	Tag=0
+fetch1: AR = 22 PC = 22
+fetch2: DR = 147 PC = 23
+fetch3: IR = 147  AR = 23
+RR16 instruction
+AC = 32768 ZCVN = 0101
+Instruction execution complete: AC=32768 R=2 ZCVN=0101 AR=23 PC=23 DR=147
+Cacheread
+	Referencing AR = 23
+	Main Memory Block = 5
+	Cache Line = 5
+	Before testing data bytes and tag:
+	Data1 = 148 Data2 = 149 Data3 = 147 Data4 = 146
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=148  Data2=149  Data3=147 Data4=146
+	Tag=0
+fetch1: AR = 23 PC = 23
+fetch2: DR = 146 PC = 24
+fetch3: IR = 146  AR = 24
+RL16 instruction
+AC = 1 ZCVN = 0100
+Instruction execution complete: AC=1 R=2 ZCVN=0100 AR=24 PC=24 DR=146
+Cacheread
+	Referencing AR = 24
+	Main Memory Block = 6
+	Cache Line = 6
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=129  Data2=0  Data3=43  Data4=131
+	Tag=0
+fetch1: AR = 24 PC = 24
+fetch2: DR = 129 PC = 25
+fetch3: IR = 129  AR = 25
+Cacheread
+	Referencing AR = 25
+	Main Memory Block = 6
+	Cache Line = 6
+	Before testing data bytes and tag:
+	Data1 = 129 Data2 = 0 Data3 = 43 Data4 = 131
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=129  Data2=0  Data3=43 Data4=131
+	Tag=0
+LDAC16 instruction
+LDAC16-1: DR = 0 PC = 26 AR = 26
+Cacheread
+	Referencing AR = 26
+	Main Memory Block = 6
+	Cache Line = 6
+	Before testing data bytes and tag:
+	Data1 = 129 Data2 = 0 Data3 = 43 Data4 = 131
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=129  Data2=0  Data3=43 Data4=131
+	Tag=0
+LDAC16-2: TR = 0 DR = 43 AR = 26 PC = 27
+LDAC16-3: AR = 43
+Cacheread
+	Referencing AR = 43
+	Main Memory Block = 10
+	Cache Line = 10
+	Before testing data bytes and tag:
+	Data1 = 255 Data2 = 0 Data3 = 2 Data4 = 127
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=255  Data2=0  Data3=2 Data4=127
+	Tag=0
+LDAC16-4: DR = 127
+LDAC16-5: AC = 1
+Cacheread
+	Referencing AR = 44
+	Main Memory Block = 11
+	Cache Line = 11
+	Before testing data bytes and tag:
+	Data1 = 255 Data2 = 128 Data3 = 0 Data4 = 3
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=255  Data2=128  Data3=0 Data4=3
+	Tag=0
+LDAC16-6: DR = 255 AC = 32767 AR = 44
+Instruction execution complete: AC=32767 R=2 ZCVN=0100 AR=44 PC=27 DR=255
+Cacheread
+	Referencing AR = 27
+	Main Memory Block = 6
+	Cache Line = 6
+	Before testing data bytes and tag:
+	Data1 = 129 Data2 = 0 Data3 = 43 Data4 = 131
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=129  Data2=0  Data3=43 Data4=131
+	Tag=0
+fetch1: AR = 27 PC = 27
+fetch2: DR = 131 PC = 28
+fetch3: IR = 131  AR = 28
+MVAC16 instruction
+MVAC16-1 R = 32767
+Instruction execution complete: AC=32767 R=32767 ZCVN=0100 AR=28 PC=28 DR=131
+Cacheread
+	Referencing AR = 28
+	Main Memory Block = 7
+	Cache Line = 7
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=139  Data2=138  Data3=136  Data4=137
+	Tag=0
+fetch1: AR = 28 PC = 28
+fetch2: DR = 139 PC = 29
+fetch3: IR = 139  AR = 29
+CLAC16 instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=32767 ZCVN=1000 AR=29 PC=29 DR=139
+Cacheread
+	Referencing AR = 29
+	Main Memory Block = 7
+	Cache Line = 7
+	Before testing data bytes and tag:
+	Data1 = 139 Data2 = 138 Data3 = 136 Data4 = 137
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=139  Data2=138  Data3=136 Data4=137
+	Tag=0
+fetch1: AR = 29 PC = 29
+fetch2: DR = 138 PC = 30
+fetch3: IR = 138  AR = 30
+INAC16 instruction
+AC = 1 ZCVN = 0000
+Instruction execution complete: AC=1 R=32767 ZCVN=0000 AR=30 PC=30 DR=138
+Cacheread
+	Referencing AR = 30
+	Main Memory Block = 7
+	Cache Line = 7
+	Before testing data bytes and tag:
+	Data1 = 139 Data2 = 138 Data3 = 136 Data4 = 137
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=139  Data2=138  Data3=136 Data4=137
+	Tag=0
+fetch1: AR = 30 PC = 30
+fetch2: DR = 136 PC = 31
+fetch3: IR = 136  AR = 31
+ADD16 Instruction
+AC = 32768 ZCVN = 0011
+Instruction execution complete: AC=32768 R=32767 ZCVN=0011 AR=31 PC=31 DR=136
+Cacheread
+	Referencing AR = 31
+	Main Memory Block = 7
+	Cache Line = 7
+	Before testing data bytes and tag:
+	Data1 = 139 Data2 = 138 Data3 = 136 Data4 = 137
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=139  Data2=138  Data3=136 Data4=137
+	Tag=0
+fetch1: AR = 31 PC = 31
+fetch2: DR = 137 PC = 32
+fetch3: IR = 137  AR = 32
+SUB16 Instruction
+AC = 1 ZCVN = 0110
+Instruction execution complete: AC=1 R=32767 ZCVN=0110 AR=32 PC=32 DR=137
+Cacheread
+	Referencing AR = 32
+	Main Memory Block = 8
+	Cache Line = 8
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=129  Data2=0  Data3=43  Data4=1
+	Tag=0
+fetch1: AR = 32 PC = 32
+fetch2: DR = 129 PC = 33
+fetch3: IR = 129  AR = 33
+Cacheread
+	Referencing AR = 33
+	Main Memory Block = 8
+	Cache Line = 8
+	Before testing data bytes and tag:
+	Data1 = 129 Data2 = 0 Data3 = 43 Data4 = 1
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=129  Data2=0  Data3=43 Data4=1
+	Tag=0
+LDAC16 instruction
+LDAC16-1: DR = 0 PC = 34 AR = 34
+Cacheread
+	Referencing AR = 34
+	Main Memory Block = 8
+	Cache Line = 8
+	Before testing data bytes and tag:
+	Data1 = 129 Data2 = 0 Data3 = 43 Data4 = 1
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=129  Data2=0  Data3=43 Data4=1
+	Tag=0
+LDAC16-2: TR = 0 DR = 43 AR = 34 PC = 35
+LDAC16-3: AR = 43
+Cacheread
+	Referencing AR = 43
+	Main Memory Block = 10
+	Cache Line = 10
+	Before testing data bytes and tag:
+	Data1 = 255 Data2 = 0 Data3 = 2 Data4 = 127
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=255  Data2=0  Data3=2 Data4=127
+	Tag=0
+LDAC16-4: DR = 127
+LDAC16-5: AC = 1
+Cacheread
+	Referencing AR = 44
+	Main Memory Block = 11
+	Cache Line = 11
+	Before testing data bytes and tag:
+	Data1 = 255 Data2 = 128 Data3 = 0 Data4 = 3
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=255  Data2=128  Data3=0 Data4=3
+	Tag=0
+LDAC16-6: DR = 255 AC = 32767 AR = 44
+Instruction execution complete: AC=32767 R=32767 ZCVN=0110 AR=44 PC=35 DR=255
+Cacheread
+	Referencing AR = 35
+	Main Memory Block = 8
+	Cache Line = 8
+	Before testing data bytes and tag:
+	Data1 = 129 Data2 = 0 Data3 = 43 Data4 = 1
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=129  Data2=0  Data3=43 Data4=1
+	Tag=0
+fetch1: AR = 35 PC = 35
+fetch2: DR = 1 PC = 36
+fetch3: IR = 1  AR = 36
+Cacheread
+	Referencing AR = 36
+	Main Memory Block = 9
+	Cache Line = 9
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=0  Data2=45  Data3=8  Data4=11
+	Tag=0
+LDAC8 instruction
+LDAC8-1: DR = 0 PC = 37 AR = 37
+Cacheread
+	Referencing AR = 37
+	Main Memory Block = 9
+	Cache Line = 9
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 45 Data3 = 8 Data4 = 11
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=45  Data3=8 Data4=11
+	Tag=0
+LDAC8-2: TR = 0 DR = 45 AR = 37 PC = 38
+LDAC8-3: AR = 45
+Cacheread
+	Referencing AR = 45
+	Main Memory Block = 11
+	Cache Line = 11
+	Before testing data bytes and tag:
+	Data1 = 255 Data2 = 128 Data3 = 0 Data4 = 3
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=255  Data2=128  Data3=0 Data4=3
+	Tag=0
+LDAC8-4: DR = 128
+LDAC8-5: AC = 128
+Instruction execution complete: AC=128 R=255 ZCVN=0110 AR=45 PC=38 DR=128
+Cacheread
+	Referencing AR = 38
+	Main Memory Block = 9
+	Cache Line = 9
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 45 Data3 = 8 Data4 = 11
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=45  Data3=8 Data4=11
+	Tag=0
+fetch1: AR = 38 PC = 38
+fetch2: DR = 8 PC = 39
+fetch3: IR = 8  AR = 39
+ADD8 Instruction
+AC = 127 ZCVN = 0110
+Instruction execution complete: AC=127 R=255 ZCVN=0110 AR=39 PC=39 DR=8
+Cacheread
+	Referencing AR = 39
+	Main Memory Block = 9
+	Cache Line = 9
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 45 Data3 = 8 Data4 = 11
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=0  Data2=45  Data3=8 Data4=11
+	Tag=0
+fetch1: AR = 39 PC = 39
+fetch2: DR = 11 PC = 40
+fetch3: IR = 11  AR = 40
+CLAC8 instruction
+AC = 0 ZCVN = 1000
+Instruction execution complete: AC=0 R=255 ZCVN=1000 AR=40 PC=40 DR=11
+Cacheread
+	Referencing AR = 40
+	Main Memory Block = 10
+	Cache Line = 10
+	Before testing data bytes and tag:
+	Data1 = 255 Data2 = 0 Data3 = 2 Data4 = 127
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=255  Data2=0  Data3=2 Data4=127
+	Tag=0
+fetch1: AR = 40 PC = 40
+fetch2: DR = 255 PC = 41
+fetch3: IR = 255  AR = 41
+HALT instruction
+Instruction execution complete: AC=0 R=255 ZCVN=1000 AR=41 PC=41 DR=255
+--- running again---
+ 
+
+rscpuecache written by Seth Roller
+Will be implementing a 1Kcache with four bytes in of data in
+each line.
+
+Enter the file containing the program: 
+The file /home/mathcs/turnin/bracken/cs330/dummy opened
+end of file reached
+Cacheread
+	Referencing AR = 0
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=150  Data2=255  Data3=255  Data4=131
+	Tag=0
+fetch1: AR = 0 PC = 0
+fetch2: DR = 150 PC = 1
+fetch3: IR = 150  AR = 1
+Cacheread
+	Referencing AR = 1
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 150 Data2 = 255 Data3 = 255 Data4 = 131
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=150  Data2=255  Data3=255 Data4=131
+	Tag=0
+MVI16 instruction
+MVI16-1: DR = 255 PC = 2 AR = 2
+Cacheread
+	Referencing AR = 2
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 150 Data2 = 255 Data3 = 255 Data4 = 131
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=150  Data2=255  Data3=255 Data4=131
+	Tag=0
+MVI16-2: DR = 255 PC = 3 AR = 3
+MVI16-3: AC = 65535
+Instruction execution complete: AC=65535 R=0 ZCVN=0000 AR=3 PC=3 DR=255
+Cacheread
+	Referencing AR = 3
+	Main Memory Block = 0
+	Cache Line = 0
+	Before testing data bytes and tag:
+	Data1 = 150 Data2 = 255 Data3 = 255 Data4 = 131
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=150  Data2=255  Data3=255 Data4=131
+	Tag=0
+fetch1: AR = 3 PC = 3
+fetch2: DR = 131 PC = 4
+fetch3: IR = 131  AR = 4
+MVAC16 instruction
+MVAC16-1 R = 65535
+Instruction execution complete: AC=65535 R=65535 ZCVN=0000 AR=4 PC=4 DR=131
+Cacheread
+	Referencing AR = 4
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=150  Data2=128  Data3=0  Data4=136
+	Tag=0
+fetch1: AR = 4 PC = 4
+fetch2: DR = 150 PC = 5
+fetch3: IR = 150  AR = 5
+Cacheread
+	Referencing AR = 5
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 150 Data2 = 128 Data3 = 0 Data4 = 136
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=150  Data2=128  Data3=0 Data4=136
+	Tag=0
+MVI16 instruction
+MVI16-1: DR = 128 PC = 6 AR = 6
+Cacheread
+	Referencing AR = 6
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 150 Data2 = 128 Data3 = 0 Data4 = 136
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=150  Data2=128  Data3=0 Data4=136
+	Tag=0
+MVI16-2: DR = 0 PC = 7 AR = 7
+MVI16-3: AC = 32768
+Instruction execution complete: AC=32768 R=65535 ZCVN=0000 AR=7 PC=7 DR=0
+Cacheread
+	Referencing AR = 7
+	Main Memory Block = 1
+	Cache Line = 1
+	Before testing data bytes and tag:
+	Data1 = 150 Data2 = 128 Data3 = 0 Data4 = 136
+	Tag = 0
+	We have a cache hit
+	After testing data bytes and tag:
+	Data1=150  Data2=128  Data3=0 Data4=136
+	Tag=0
+fetch1: AR = 7 PC = 7
+fetch2: DR = 136 PC = 8
+fetch3: IR = 136  AR = 8
+ADD16 Instruction
+AC = 32767 ZCVN = 0110
+Instruction execution complete: AC=32767 R=65535 ZCVN=0110 AR=8 PC=8 DR=136
+Cacheread
+	Referencing AR = 8
+	Main Memory Block = 2
+	Cache Line = 2
+	Before testing data bytes and tag:
+	Data1 = 0 Data2 = 0 Data3 = 0 Data4 = 0
+	Tag = 255
+	We have a cache miss
+	After testing data bytes and tag:
+	Data1=255  Data2=0  Data3=0  Data4=0
+	Tag=0
+fetch1: AR = 8 PC = 8
+fetch2: DR = 255 PC = 9
+fetch3: IR = 255  AR = 9
+HALT instruction
+Instruction execution complete: AC=255 R=255 ZCVN=0110 AR=9 PC=9 DR=255
